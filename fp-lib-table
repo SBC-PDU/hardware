@@ -1,3 +1,5 @@
 (fp_lib_table
+  (version 7)
   (lib (name "Package_DFN_QFN_custom")(type "KiCad")(uri "${KIPRJMOD}/footprints/Package_DFN_QFN_custom.pretty")(options "")(descr ""))
+  (lib (name "Connector_USB_custom.pretty")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_USB_custom.pretty")(options "")(descr ""))
 )
