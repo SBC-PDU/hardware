@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -57,8 +57,12 @@
         }
       ],
       "drc_exclusions": [
+        "silk_edge_clearance|120000000|55200000|64e5193d-486f-48ba-8590-c0fdbe63d382|eb8eaf23-3782-41a4-9870-b351101732b1",
+        "silk_edge_clearance|120000000|73440000|64e5193d-486f-48ba-8590-c0fdbe63d382|5a0058c8-a39a-4f09-9f3b-4b916e9ed2ab",
+        "silk_edge_clearance|120000000|73440000|64e5193d-486f-48ba-8590-c0fdbe63d382|e4ab0f1d-5881-4298-8551-f92b34a9fce6",
         "unconnected_items|61500000|32250000|82796220-1623-4661-abcd-e06d6674cde4|0f5a8ff4-d6e5-41c4-a960-0fc581cf7a94",
-        "unconnected_items|61500000|32250000|82796220-1623-4661-abcd-e06d6674cde4|e5f917f0-85d2-4d4a-a867-60208a44d042"
+        "unconnected_items|61500000|32250000|82796220-1623-4661-abcd-e06d6674cde4|e5f917f0-85d2-4d4a-a867-60208a44d042",
+        "unconnected_items|74515000|32500000|7d7d1441-4acf-4c3a-83b7-9192e3ecc0d6|845f5df0-13e2-41b0-b50e-2a0ca738633e"
       ],
       "meta": {
         "version": 2
@@ -88,12 +92,12 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "net_conflict": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "warning",
         "padstack": "error",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -178,7 +182,13 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.25,
+        0.75,
+        1.5,
+        2.0,
+        3.0,
+        4.5
       ],
       "via_dimensions": [
         {
@@ -198,11 +208,14 @@
   },
   "erc": {
     "erc_exclusions": [
-      "power_pin_not_driven|1066800|685800|ec60f51b-5a42-4a9f-8346-13c3837ac4cc|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|381000|1320800|e8920dfa-25a1-47c1-85e4-3563d7e97132|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|381000|1422400|e8920dfa-25a1-47c1-85e4-3563d7e97132|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|533400|673100|528a80a3-2c8a-4c33-9f78-d5f9f6d5e519|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|546100|1371600|73e01d73-d002-4315-a491-d549f050551b|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|546100|863600|6f091d22-cb44-4e84-b513-454df92cf40c|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|546100|863600|73bce0a3-b6cf-4ad5-8aed-1a2e756a700c|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|812800|1422400|92a1777f-246f-47eb-9856-620746acffbf|00000000-0000-0000-0000-000000000000|||",
+      "power_pin_not_driven|812800|914400|b17a3298-76c0-4fa2-813f-90f1d135e356|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|838200|1422400|92a1777f-246f-47eb-9856-620746acffbf|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|838200|406400|9c1a284e-53d7-469e-835e-dc417b0dda72|00000000-0000-0000-0000-000000000000|||",
       "power_pin_not_driven|838200|914400|b17a3298-76c0-4fa2-813f-90f1d135e356|00000000-0000-0000-0000-000000000000|||"
@@ -406,7 +419,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "error",
@@ -421,7 +434,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "pdu_new.kicad_pro",
+    "filename": "pdu.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -489,7 +502,7 @@
         "name": "+5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.0,
+        "track_width": 4.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -554,7 +567,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "/home/roman/Dokumenty/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -580,10 +593,6 @@
     [
       "ae073c82-178f-4437-b2e2-ada9732b5929",
       "Outputs"
-    ],
-    [
-      "b1cc2dc2-440e-497f-ab73-af343835a716",
-      "Ethernet"
     ]
   ],
   "text_variables": {}
