@@ -60,8 +60,6 @@
         "silk_edge_clearance|120000000|55200000|64e5193d-486f-48ba-8590-c0fdbe63d382|eb8eaf23-3782-41a4-9870-b351101732b1",
         "silk_edge_clearance|120000000|73440000|64e5193d-486f-48ba-8590-c0fdbe63d382|5a0058c8-a39a-4f09-9f3b-4b916e9ed2ab",
         "silk_edge_clearance|120000000|73440000|64e5193d-486f-48ba-8590-c0fdbe63d382|e4ab0f1d-5881-4298-8551-f92b34a9fce6",
-        "unconnected_items|61500000|32250000|82796220-1623-4661-abcd-e06d6674cde4|0f5a8ff4-d6e5-41c4-a960-0fc581cf7a94",
-        "unconnected_items|61500000|32250000|82796220-1623-4661-abcd-e06d6674cde4|e5f917f0-85d2-4d4a-a867-60208a44d042",
         "unconnected_items|74515000|32500000|7d7d1441-4acf-4c3a-83b7-9192e3ecc0d6|845f5df0-13e2-41b0-b50e-2a0ca738633e"
       ],
       "meta": {
@@ -567,7 +565,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "/home/roman/Dokumenty/",
+    "plot_directory": "/home/roman/github/SBC-PDU/hardware",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
